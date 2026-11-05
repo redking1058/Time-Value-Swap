@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Swap | Personalized Reclaim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+  
+  <main class="container">
+    <header class="header">
+      <span class="badge">Dynamic Interest Swap</span>
+      <h1>Turn Screen Time Into Life</h1>
+      <p>Split your scroll time into real-life goals over 6 months.</p>
+    </header>
+
+    <section class="card input-card">
+      <div class="slider-header">
+        <label for="hours-slider">Daily Social Media / Phone Time</label>
+        <div class="hours-display"><span id="hours-val">3</span> <small>hrs/day</small></div>
+      </div>
+      
+      <input type="range" id="hours-slider" min="0.5" max="8" step="0.5" value="3">
+      
+      <div class="slider-labels">
+        <span>30 mins</span>
+        <span>4 hrs</span>
+        <span>8 hrs</span>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card highlight">
+        <span class="stat-icon">⏳</span>
+        <div class="stat-data">
+          <h3 id="six-month-hours">548</h3>
+          <p>Total free hours in 6 months</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🗓️</span>
+        <div class="stat-data">
+          <h3 id="full-days">23</h3>
+          <p>Full days lost to scrolling</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcomes-section">
+      <h2>Set your interest % for each activity:</h2>
+      <div class="activities-grid" id="activities-container">
+        <!-- Cards generated dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
